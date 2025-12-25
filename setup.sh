@@ -24,17 +24,13 @@ doas apk add flatpak
 
 # Services
 
-sleep 1
 doas rc-update add dbus
-sleep 1
 doas rc-service dbus start
-sleep 1
 doas rc-update add lightdm
-sleep 1
 doas rc-service lightdm start
 
-#############
+# Internet
 
-sleep 2
+doas setup-interfaces
 
 doas reboot
