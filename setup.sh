@@ -2,9 +2,9 @@
 
 # LOCALES
 
-doas apk add musl-locales
-doas apk add lang
-doas cp /etc/profile.d/20locale.sh /etc/profile.d/20locale.sh.sh
+#doas apk add musl-locales
+#doas apk add lang
+#doas cp /etc/profile.d/20locale.sh /etc/profile.d/20locale.sh.sh
 
 # X11
 
