@@ -33,4 +33,4 @@ doas rc-service lightdm start
 
 doas setup-interfaces
 
-doas reboot
+
