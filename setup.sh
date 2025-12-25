@@ -12,18 +12,22 @@ doas setup-xorg-base
 
 # Graphical
 
-doas apk add lightdm
-doas apk add lightdm-gtk-greeter
+doas apk add lightdm lightdm-gtk-greeter
 doas apk add fluxbox
 doas apk add firefox 
 
-# ETC
+# Etcetera
 
 doas apk add xterm
-doas apk add dbus
-doas apk add dbus-x11
-doas rc-update add dbus
+doas apk add dbus dbus-x11
 doas apk add flatpak
 
+# Services
+
+doas rc-update add dbus
+doas rc-service dbus start
 doas rc-update add lightdm
 
+#############
+
+doas reboot
