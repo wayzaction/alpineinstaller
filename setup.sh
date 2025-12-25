@@ -13,7 +13,7 @@ doas setup-xorg-base
 # Graphical
 
 doas apk add lightdm lightdm-gtk-greeter
-doas apk add fluxbox
+doas apk add icewm
 doas apk add firefox 
 
 # Etcetera
@@ -28,9 +28,5 @@ doas rc-update add dbus
 doas rc-service dbus start
 doas rc-update add lightdm
 doas rc-service lightdm start
-
-# Internet
-
-doas setup-interfaces
 
 
