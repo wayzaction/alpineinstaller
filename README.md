@@ -1,4 +1,4 @@
 # alpineinstaller
 Alpine Linux installer
 
-wget -O - https://github.com/wayzaction/alpineinstaller/blob/main/setup.sh | sh
+doas wget -qO- https://raw.githubusercontent.com/wayzaction/alpineinstaller/main/setup.sh | doas ash
